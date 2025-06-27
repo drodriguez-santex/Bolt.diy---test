@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: bolt-diy
+    env: docker
+    plan: free
+    repo: https://github.com/drodriguez-santex/bolt.diy
+    branch: main
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: OPENAI_API_KEY
+        value: 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
+      - key: BOLT_ENV
+        value: production
+    healthCheckPath: /
