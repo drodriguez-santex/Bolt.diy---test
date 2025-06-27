@@ -9,7 +9,7 @@ services:
     autoDeploy: true
     envVars:
       - key: OPENAI_API_KEY
-        value: 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
+        value: my-openai-api-key
       - key: BOLT_ENV
         value: production
     healthCheckPath: /
